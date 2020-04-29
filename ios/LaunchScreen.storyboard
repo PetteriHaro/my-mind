@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2ro-tc-RHf">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="nvw-6U-03x">
+            <objects>
+                <viewController id="2ro-tc-RHf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PGa-vp-AMG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SplashBG" translatesAutoresizingMaskIntoConstraints="NO" id="6nb-gb-67E">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="3cB-gH-mft">
+                                <rect key="frame" x="197" y="605" width="20" height="20"/>
+                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SplashImage" translatesAutoresizingMaskIntoConstraints="NO" id="Dn9-Up-6zV">
+                                <rect key="frame" x="127" y="196" width="160" height="194.66666666666663"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.13990845393511761" green="0.13012994720879612" blue="0.24742227157360408" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="3cB-gH-mft" firstAttribute="centerX" secondItem="PGa-vp-AMG" secondAttribute="centerX" id="Mhl-F5-NVb"/>
+                            <constraint firstItem="IzI-XH-ofw" firstAttribute="bottom" secondItem="3cB-gH-mft" secondAttribute="bottom" constant="111" id="RWJ-7A-ihx"/>
+                            <constraint firstItem="Dn9-Up-6zV" firstAttribute="centerX" secondItem="PGa-vp-AMG" secondAttribute="centerX" id="t3d-GC-pQM"/>
+                            <constraint firstItem="Dn9-Up-6zV" firstAttribute="top" secondItem="IzI-XH-ofw" secondAttribute="top" constant="196" id="tSw-Gt-jnu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IzI-XH-ofw"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                <color key="value" red="0.092675811397136224" green="0.091461783198612326" blue="0.18099619289340096" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                <color key="value" red="0.63137254899999995" green="0.45882352939999999" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BBU-rV-uKf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5.7971014492753632" y="49.553571428571423"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="SplashBG" width="375" height="667"/>
+        <image name="SplashImage" width="160" height="194.66667175292969"/>
+    </resources>
+</document>

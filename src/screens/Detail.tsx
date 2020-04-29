@@ -8,6 +8,7 @@ import images from '../assets/images';
 import { listHeaderHeight } from './List';
 import ArticleInfo from '../components/ArticleInfo';
 import { CloseIcon } from '../assets/icons';
+import { isAndroid } from '../utils/platform';
 
 interface Props {
   navigation: StackNavProps;
@@ -18,7 +19,9 @@ class Detail extends React.Component<Props> {
   componentDidMount() {
     this.props.navigation.setOptions({
       headerTitle: this.props.route.params.title,
-      headerBackImage: (p) => <CloseIcon size={34} color={p.tintColor} />,
+      headerBackImage: (p) => (
+        <CloseIcon size={isAndroid ? 28 : 34} color={p.tintColor} />
+      ),
       headerTitleStyle: { fontSize: 22, fontWeight: 'bold' },
       headerBackground: () => (
         <View style={{ flex: 1, backgroundColor: colors.primary500 }} />

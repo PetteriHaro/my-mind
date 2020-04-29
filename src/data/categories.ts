@@ -21,7 +21,7 @@ const categories: Category[] = [
     image: images.thumbnails.auto,
     label: 'AUTO',
     title: 'CAR CHANNEL',
-    followers: 35325,
+    followers: 3532500,
   },
   {
     id: 'technology',

@@ -3,7 +3,7 @@ import { View, StyleSheet, Image, ScrollView, Text } from 'react-native';
 import { RouteProp } from '@react-navigation/native';
 import { StackNavProps } from '../types';
 import colors from '../styles/colors';
-import { StackList } from '../../App';
+import { StackList } from '../App';
 import images from '../assets/images';
 import { listHeaderHeight } from './List';
 import ArticleInfo from '../components/ArticleInfo';
